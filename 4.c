@@ -1,11 +1,9 @@
 #include<stdio.h>
 int main()
 {
-int var = 5 ;
-var = 40 ;
-int *ptr ;
-ptr=&var ;
-printf("%d \n",*ptr);
-printf("%p \n",ptr);
-printf("%p \n",&var);
+int i , j=40 ;
+i=j,j+10;
+printf("i = %d \n j = %d \n",i,j);
+i=(j,j+10);
+printf("i= %d \n j= %d",i,j);
 }
